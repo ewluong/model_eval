@@ -1,0 +1,2 @@
+[console_scripts]
+model-eval-suite = model_eval_suite.cli:main
