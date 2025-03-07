@@ -1,4 +1,4 @@
-# Model Evaluation & Comparison Suite - Streamlit App
+# Model Evaluation & Comparison Suite
 
 ## Overview
 This repository contains a Streamlit application that allows data scientists to upload machine learning model files (pickle or joblib), along with a test dataset (CSV), and then automatically evaluate and compare the models. The app computes key metrics, performs subgroup analysis, and generates interactive visualizations. Additionally, users can generate a downloadable HTML report of the evaluation results.
