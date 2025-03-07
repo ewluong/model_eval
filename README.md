@@ -10,7 +10,7 @@ This repository contains a Streamlit application that allows data scientists to 
   - For Classification: Accuracy, Precision, Recall, F1 Score, ROC-AUC, and confusion matrix.
   - For Regression: Mean Squared Error (MSE), Mean Absolute Error (MAE), and R².
 - Subgroup Analysis: Automatically bins numeric features with many unique values, or analyzes user-specified subgroups.
-- Interactive Visualization: Utilizes Plotly for futuristic, interactive charts including bar charts, heatmaps (confusion matrices), ROC curves, and residual plots.
+- Interactive Visualization: Utilizes Plotly for interactive charts including bar charts, heatmaps (confusion matrices), ROC curves, and residual plots.
 - Downloadable Report: Generate and download a comprehensive HTML report that includes tables and interactive charts.
 - Custom Domain Deployment: Instructions provided for embedding the app in a GitHub Pages site and linking it to your custom domain.
 
@@ -33,35 +33,7 @@ This repository contains a Streamlit application that allows data scientists to 
 - Evaluation: Click "Run Evaluation" to compute metrics, generate visualizations, and view a comparison summary.
 - Download Report: If desired, check the option to generate a downloadable HTML report of the results.
 
-## Deployment & Custom Domain
-This app can be deployed on Streamlit Cloud. For custom domain deployment:
-1. Deploy your app on Streamlit Cloud to get a public URL.
-2. Create a GitHub Pages repository with an index.html file that embeds your Streamlit app via an iframe.
-3. Link your GitHub Pages site to your custom domain by configuring the repository settings and updating your DNS records.
-   For example, your index.html could contain:
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-     <meta charset="UTF-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>My Model Evaluation App</title>
-     <style>
-       body { margin: 0; padding: 0; overflow: hidden; }
-       iframe { border: none; width: 100vw; height: 100vh; }
-     </style>
-   </head>
-   <body>
-     <iframe src="https://share.streamlit.io/yourusername/model-eval-suite/streamlit_app.py"></iframe>
-   </body>
-   </html>
-4. Follow GitHub Pages documentation to configure your custom domain.
-
 ## Testing
 Unit tests are provided in the tests/ directory. To run tests:
    pytest
 
-## Contributing
-Contributions and feedback are welcome. Please open issues or submit pull requests as needed.
-
-## License
-This project is licensed under the MIT License.
